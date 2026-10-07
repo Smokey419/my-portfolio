@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian Hernandez Delgado | IT Service Desk Technician</title>
+<meta name="theme-color" content="#08111F">
+<meta name="description" content="Portfolio of Brian Hernandez Delgado, IT Service Desk Technician and Information Technology student concentrating in Cybersecurity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+:root{
+  --paper:#08111F; --card:#0F1D33; --ink:#E6EEF8; --muted:#9DB0C8;
+  --accent:#38BDF8; --accent-d:#0EA5E9; --blue:#3B82F6; --line:#1B3150;
+  --head:'Sora','Segoe UI',system-ui,sans-serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.65 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.2;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+h2{font-size:1.75rem;margin-bottom:1.5rem;padding-left:.9rem;border-left:4px solid var(--accent)}
+p{max-width:68ch;margin:0 0 1rem}
+
+/* Nav */
+header.nav{position:sticky;top:0;z-index:10;background:rgba(8,17,31,.88);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font:700 1rem var(--head);color:var(--ink);text-decoration:none;transition:color .2s}
+.brand:hover{color:var(--accent)}
+.nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+.nav ul a{color:var(--muted);text-decoration:none;font-weight:600;padding:.3rem 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav ul a:hover{color:var(--ink);border-color:var(--blue)}
+.nav ul a.active{color:var(--accent);border-color:var(--accent)}
+.menu-btn{display:none;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:.4rem .7rem;font:600 .95rem var(--body);cursor:pointer}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:5.5rem 0 5rem;color:#fff;background:radial-gradient(ellipse at 75% 20%,#12335C 0%,#0A1B33 45%,#08111F 100%);border-bottom:1px solid var(--line)}
+.hero svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero .node{fill:var(--accent);filter:drop-shadow(0 0 6px rgba(56,189,248,.8));opacity:0;animation:blip .6s ease-out forwards}
+@keyframes blip{to{opacity:1}}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);letter-spacing:-.02em}
+.hero .role{font:500 clamp(1.05rem,2.5vw,1.35rem) var(--head);margin:.8rem 0 1.2rem;color:var(--accent)}
+.hero p{color:#C9D8EA;font-size:1.15rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent);transition:transform .2s,box-shadow .2s,background .2s}
+.btn.primary{background:var(--accent);color:#06101E}
+.btn.ghost{color:#fff}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(56,189,248,.25)}
+.btn.ghost:hover{background:rgba(56,189,248,.12)}
+
+/* Cards & grids */
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.4rem}
+.card h3{font-size:1.1rem;margin-bottom:.6rem}
+.card p{margin:0 0 .8rem;color:var(--muted)}
+.card:last-child p:last-child{margin-bottom:0}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.tags li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;font-size:.95rem;font-weight:600;transition:border-color .2s,color .2s}
+.tags li:hover{border-color:var(--accent);color:var(--accent)}
+.status{display:inline-block;font-size:.85rem;font-weight:600;color:var(--accent);background:rgba(56,189,248,.14);border:1px solid rgba(56,189,248,.4);border-radius:999px;padding:.1rem .7rem;margin-bottom:.7rem}
+.status.done{color:var(--muted);background:transparent;border-color:var(--line)}
+.proj{position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.proj::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--blue),var(--accent))}
+.proj:hover{transform:translateY(-8px);border-color:var(--accent);box-shadow:0 18px 36px rgba(0,0,0,.45),0 0 0 1px rgba(56,189,248,.35),0 0 28px rgba(56,189,248,.15)}
+.proj a.link{font-weight:600}
+.proj-note{color:var(--muted);font-size:.95rem}
+.skills-grid{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.skills-grid .card{transition:border-color .25s}
+.skills-grid .card:hover{border-color:var(--blue)}
+.skills-grid h3{display:flex;align-items:center;gap:.6rem}
+.skills-grid h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(56,189,248,.7)}
+.proj .tags{margin-top:1rem}
+.proj .tags li{font-size:.85rem;padding:.15rem .65rem}
+.js .reveal{opacity:0}
+.js .reveal.in{animation:rise .6s ease both;animation-delay:var(--d,0s)}
+@keyframes rise{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+.alt{background:#0B172A;border-block:1px solid var(--line)}
+.alt .tags li{background:var(--paper)}
+
+/* Contact */
+.contact-list{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.8rem}
+footer{padding:2rem 0;text-align:center;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:#0B172A;border-bottom:1px solid var(--line);padding:.5rem 1.25rem 1rem}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:.7rem 0}
+  section{padding:3.2rem 0}
+}
+@media (prefers-reduced-motion:reduce){.js .reveal,.js .reveal.in{opacity:1;animation:none}html{scroll-behavior:auto}.hero .node{animation:none;opacity:1}.proj,.btn{transition:none}.proj:hover,.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Brian Hernandez Delgado</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg aria-hidden="true" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid slice">
+      <g stroke="#3B82F6" stroke-width="1" fill="none">
+        <path d="M80 80L260 160L420 70L610 190L790 90L930 210"/>
+        <path d="M260 160L330 320L610 190L700 330L930 210"/>
+        <path d="M420 70L610 190M80 80L150 300L330 320"/>
+      </g>
+      <g id="nodes"></g>
+    </svg>
+    <div class="wrap">
+      <h1>Brian Hernandez Delgado</h1>
+      <p class="role">IT Service Desk Technician | Information Technology student, Cybersecurity concentration</p>
+      <p>I help people get back to work by solving technical problems, and I'm building the security knowledge to help keep their systems protected.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I'm an IT Service Desk Technician working with Microsoft 365, Microsoft Entra ID, Microsoft Intune, and Active Directory, and troubleshooting Windows systems for the people who depend on them.</p>
+      <p>Alongside my work, I'm pursuing a bachelor's degree in Information Technology with a concentration in Cybersecurity. I practice with tools like Nmap and Wireshark, and I build projects that apply Python and generative AI to everyday IT support problems.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="alt">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3>Microsoft and cloud</h3>
+          <ul class="tags"><li>Microsoft 365</li><li>Microsoft Entra ID</li><li>Microsoft Intune</li><li>Active Directory</li></ul>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity</h3>
+          <ul class="tags"><li>Cybersecurity</li><li>Nmap</li><li>Wireshark</li></ul>
+        </div>
+        <div class="card">
+          <h3>Networking</h3>
+          <ul class="tags"><li>Networking</li><li>Nmap</li><li>Wireshark</li></ul>
+        </div>
+        <div class="card">
+          <h3>Programming</h3>
+          <ul class="tags"><li>Python</li></ul>
+        </div>
+        <div class="card">
+          <h3>IT support</h3>
+          <ul class="tags"><li>Technical support</li><li>Windows troubleshooting</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <section id="education" class="alt">
+    <div class="wrap">
+      <h2>Education and certification</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="status">In progress</span>
+          <h3>Bachelor's degree, Information Technology</h3>
+          <p>Concentration in Cybersecurity</p>
+        </div>
+        <div class="card">
+          <span class="status done">Completed</span>
+          <h3>A.A.S., Computer Information Technology</h3>
+          <p>Network Administration</p>
+        </div>
+        <div class="card">
+          <span class="status done">Completed</span>
+          <h3>Certificate of Completion</h3>
+          <p>Cybersecurity and Forensics</p>
+        </div>
+        <div class="card">
+          <span class="status done">Certification</span>
+          <h3>CompTIA ITF+</h3>
+          <p>IT Fundamentals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Interested in working together or want to talk IT and cybersecurity? Reach out.</p>
+      <ul class="contact-list" id="contactList"></ul>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="year"></span> Brian Hernandez Delgado</div></footer>
+
+<script>
+/* ===== EDIT THIS BLOCK ===== 
+   Add your real details here. Anything left as "" is simply not shown. */
+const CONFIG = {
+  email: "brianhernandez154@gmail.com",
+  linkedin: "https://www.linkedin.com/in/brian-hernandez-delgado-11967316a",
+  github: ""      // add your full GitHub profile URL here and a GitHub button will appear
+};
+
+const PROJECTS = [
+  {
+    name: "IT Help Desk RAG Assistant",
+    desc: "Demonstrates how retrieval-augmented generation (RAG) can be applied to IT help desk support.",
+    tags: ["RAG", "IT support"],
+    url: ""       // optional: link to repo or demo
+  },
+  {
+    name: "Smart Email Router",
+    desc: "Demonstrates using generative AI to route incoming email to the right destination.",
+    tags: ["Generative AI"],
+    url: ""
+  },
+  {
+    name: "Cybersecurity and Network Security Labs",
+    desc: "Demonstrates hands-on practice applying cybersecurity and network security concepts.",
+    tags: ["Cybersecurity", "Network security"],
+    url: ""
+  }
+];
+/* ===== END EDIT BLOCK ===== */
+
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// Projects
+document.getElementById('projectGrid').innerHTML = PROJECTS.map(p => `
+  <article class="card proj">
+    <h3>${esc(p.name)}</h3>
+    <p>${esc(p.desc)}</p>
+    ${p.tags && p.tags.length ? `<ul class="tags">${p.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+    ${p.url ? `<a class="link" href="${esc(p.url)}" target="_blank" rel="noopener">View project</a>` : ''}
+  </article>`).join('');
+
+// Contact
+const links = [];
+if (CONFIG.email) links.push(`<a class="btn primary" href="mailto:${esc(CONFIG.email)}">Email me</a>`);
+if (CONFIG.linkedin) links.push(`<a class="btn ghost-dark" href="${esc(CONFIG.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`);
+if (CONFIG.github) links.push(`<a class="btn ghost-dark" href="${esc(CONFIG.github)}" target="_blank" rel="noopener">GitHub</a>`);
+const list = document.getElementById('contactList');
+list.innerHTML = links.length ? links.map(l => `<li>${l}</li>`).join('') : '<li class="proj-note">Contact details coming soon.</li>';
+
+// Mobile menu
+const btn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+btn.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+});
+menu.addEventListener('click', e => { if (e.target.tagName === 'A') { menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+
+// Active nav link
+const secs = [...document.querySelectorAll('main section[id]')], navLinks = [...menu.querySelectorAll('a')];
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+}), { rootMargin: '-45% 0px -50% 0px' });
+secs.forEach(s => spy.observe(s));
+
+// Hero network: nodes appear one after another on load
+const pts = [[80,80],[260,160],[420,70],[610,190],[790,90],[930,210],[330,320],[700,330],[150,300]];
+const g = document.getElementById('nodes');
+pts.forEach(([x,y],i) => {
+  const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r',6);
+  c.setAttribute('class','node'); c.style.animationDelay = (0.25*i)+'s';
+  g.appendChild(c);
+});
+
+// Smooth scrolling for in-page links (respects reduced-motion settings)
+const calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const t = document.querySelector(a.getAttribute('href'));
+  if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({ behavior: calm.matches ? 'auto' : 'smooth', block: 'start' });
+  history.pushState(null, '', a.getAttribute('href'));
+}));
+
+// Scroll-in reveal: runs after projects are rendered
+const revealEls = document.querySelectorAll('section:not(.hero) h2, section:not(.hero) > .wrap > p, section:not(.hero) .card, .contact-list');
+revealEls.forEach(el => {
+  el.classList.add('reveal');
+  if (el.classList.contains('card')) el.style.setProperty('--d', Math.min([...el.parentElement.children].indexOf(el), 5) * 0.08 + 's');
+});
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('in'));
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<style>.btn.ghost-dark{color:var(--accent);border-color:var(--accent)}.btn.ghost-dark:hover{background:rgba(56,189,248,.12)}</style>
+</body>
+</html>
